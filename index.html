@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Health Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Heart Health Predictor</h1>
+    </header>
+
+    <main>
+        <section id="landing" class="active">
+            <h2>Welcome to the Heart Health Predictor</h2>
+            <p>This application uses a comprehensive questionnaire and advanced algorithms to assess your heart health risk. All processing is done in your browser for complete privacy.</p>
+            <div class="graphic-container">
+                <img src="/placeholder.svg?height=200&width=200" alt="Heart health illustration" class="landing-graphic">
+            </div>
+            <form id="name-form">
+                <label for="user-name">Please enter your name:</label>
+                <input type="text" id="user-name" required>
+                <button type="submit" class="btn pulse">Start Questionnaire</button>
+            </form>
+        </section>
+
+        <section id="questionnaire" class="hidden">
+            <div id="progress-container">
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <span id="question-number"></span>
+            </div>
+            <div id="question-container"></div>
+            <div id="navigation">
+                <button id="prev-question" class="btn" disabled>Previous</button>
+                <button id="next-question" class="btn pulse">Next</button>
+            </div>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2>Your Heart Health Results</h2>
+            <div id="user-greeting"></div>
+            <div id="risk-level" class="result-card"></div>
+            <div id="confidence-score" class="result-card"></div>
+            <div id="contributing-factors" class="result-card"></div>
+            <div id="recommendations" class="result-card"></div>
+            <div class="graphic-container">
+                <img src="/placeholder.svg?height=150&width=150" alt="Heart health tips" class="results-graphic">
+            </div>
+            <button id="restart" class="btn pulse">Restart Questionnaire</button>
+        </section>
+    </main>
+
+   <footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Prediction and classification of Heart diseases using machine learning Algorithms - Ibrahim Nafisatu.
+            <br>This is just For educational purposes only. Always consult a healthcare professional for medical advice.</p>
+        </div>
+        </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
